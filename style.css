@@ -47,6 +47,10 @@
     border-radius: 50%;
     text-align: center;
     line-height: 100px;
+    transition: 0.3s all ease;
+}
+.box:hover {
+    opacity: 0.5;
 }
 
 .row1-1, .row1-2, .row1-3 {
