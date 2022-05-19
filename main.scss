@@ -3,6 +3,7 @@ $color-grey-light: #a5a5a5;
 $color-yellow: #f1a33c;
 $color-grey-dark: #333;
 $color-white: #fff;
+$color-input: #dbd8d3;
 $font-size-default: 45px;
 
 *{
@@ -18,15 +19,50 @@ $font-size-default: 45px;
     height: 840px;
     width: 500px;
     border-radius: 50px;
-    margin: 40px auto;   
+    margin: 40px auto;  
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, .5), 10px 10px 15px rgba($color-black, .5); 
 }
 
-.board {
-    height: 250px;
-    width: 460px;
+.calculator_input_display {
+    height: 12rem;
+    width: 28.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 60px;
     text-align: right;
     padding: 20px;
+}
+
+.calculator_input_Number_Priviews {
+    width: 25rem;
+    height:100%;
+    outline:none;
+    background-color:$color-black;
+    border:none;
+    color:$color-white;
+    font-size:2.4rem;
+    overflow-y:hidden;
+    text-align: right;
+    resize:none;
+    display:flex;
+    flex-direction: row-reverse;
+    padding:30px 0px 0px 0px ;
+    color:$color-input;
+}
+
+.calculator_input_Number{
+    width: 275px;
+    height: 100px;
+    outline:none;
+    background-color:$color-black;
+    color:$color-white;
+    border:none;
+    font-size: 3rem;
+    overflow-y: hidden;
+    text-align: right;
+    resize: none;
 }
 
 .content {
