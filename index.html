@@ -9,30 +9,32 @@
 </head>
 <body>
     <div class="container">
-        <div class="board">
-
+        <div class="calculator_input_display">
+            <input type="text" class="inputScreen" name="inputScreen">
         </div>
         <div class="content">
-            <div class="box row1-1">AC</div>
-            <div class="box row1-2">±</div>
-            <div class="box row1-3">%</div>
-            <div class="box row1-4">÷</div>
-            <div class="box row2-1">7</div>
-            <div class="box row2-2">8</div>
-            <div class="box row2-3">9</div>
-            <div class="box row2-4">x</div>
-            <div class="box row3-1">4</div>
-            <div class="box row3-2">5</div>
-            <div class="box row3-3">6</div>
-            <div class="box row3-4">-</div>
-            <div class="box row4-1">1</div>
-            <div class="box row4-2">2</div>
-            <div class="box row4-3">3</div>
-            <div class="box row4-4">+</div>
-            <div class="box row5-1">0</div>
-            <div class="box row5-2">.</div>
-            <div class="box row5-3">=</div>
+            <button type="button" class="box row1-1" id="clear" value="AC">AC</button>
+            <button type="button" class="box row1-2" value="±">±</button>
+            <button type="button" class="box row1-3" value="%">%</button>
+            <button type="button" class="box row1-4" value=" / ">÷</button>
+            <button type="button" class="box row2-1" value="7">7</button>
+            <button type="button" class="box row2-2" value="8">8</button>
+            <button type="button" class="box row2-3" value="9">9</button>
+            <button type="button" class="box row2-4" value=" * ">x</button>
+            <button type="button" class="box row3-1" value="4">4</button>
+            <button type="button" class="box row3-2" value="5">5</button>
+            <button type="button" class="box row3-3" value="6">6</button>
+            <button type="button" class="box row3-4" value=" - ">-</button>
+            <button type="button" class="box row4-1" value="1">1</button>
+            <button type="button" class="box row4-2" value="2">2</button>
+            <button type="button" class="box row4-3" value="3">3</button>
+            <button type="button" class="box row4-4" value=" + ">+</button>
+            <button type="button" class="box row5-1" value="0">0</button>
+            <button type="button" class="box row5-2" value=".">.</button>
+            <button type="button" class="box row5-3" id="calculate" value="=">=</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

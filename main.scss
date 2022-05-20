@@ -1,3 +1,11 @@
+$color-black: #000;
+$color-grey-light: #a5a5a5;
+$color-yellow: #f1a33c;
+$color-grey-dark: #333;
+$color-white: #fff;
+$color-input: #dbd8d3;
+$font-size-default: 45px;
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
@@ -7,12 +15,13 @@
 
 .container {
   padding: 20px;
-  background-color: #000;
+  background-color: $color-black;
   height: 840px;
   width: 500px;
   border-radius: 50px;
   margin: 40px auto;
-  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba($color-black, 0.5);
 }
 
 .calculator_input_display {
@@ -31,8 +40,8 @@
   width: 275px;
   height: 100px;
   outline: none;
-  background-color: #000;
-  color: #fff;
+  background-color: $color-black;
+  color: $color-white;
   border: none;
   font-size: 3rem;
   overflow-y: hidden;
@@ -43,7 +52,7 @@
 .content {
   height: 540px;
   width: 440px;
-  font-size: 45px;
+  font-size: $font-size-default;
   display: grid;
   margin: auto;
   grid-template-columns: 100px 100px 100px 100px;
@@ -52,31 +61,32 @@
 }
 
 .box {
-  background-color: #333;
+  background-color: $color-grey-dark;
   border-radius: 50%;
   text-align: center;
   line-height: 100px;
   transition: 0.3s all ease;
   font-size: 2.4rem;
-  color: #fff;
-}
-.box:hover {
-  opacity: 0.5;
-  cursor: pointer;
+  color: $color-white;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
 }
 
 .row1-1,
 .row1-2,
 .row1-3 {
-  background-color: #a5a5a5;
-  color: #000;
+  background-color: $color-grey-light;
+  color: $color-black;
 }
 
 .row1-4,
 .row2-4,
 .row3-4,
 .row4-4 {
-  background-color: #f1a33c;
+  background-color: $color-yellow;
 }
 
 .row5-1 {
@@ -86,5 +96,3 @@
   text-align: left;
   padding-left: 43px;
 }
-
-/*# sourceMappingURL=style.css.map */
